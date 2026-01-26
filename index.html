@@ -1,206 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ranjith | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ranjith K - Full Stack Developer Portfolio">
+    <title>Ranjith K | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="R-favicon.jpg" type="image/x-icon">
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
-  <!-- AOS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#home">Ranjith</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Home -->
-<section id="home" class="d-flex align-items-center text-center">
-  <div class="container">
-    <h1 data-aos="fade-up">Hi, I'm <span>Ranjith</span></h1>
-    <p class="lead" data-aos="fade-up" data-aos-delay="200">Web Developer</p>
-    <a href="#projects" class="btn btn-light mt-3" data-aos="zoom-in" data-aos-delay="400">
-      View My Work
-    </a>
-  </div>
-</section>
-
-<!-- About -->
-<section id="about">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-5 text-center" data-aos="fade-right">
-        <img src="proimg.jpeg" class="img-fluid rounded-circle shadow" alt="Ranjith">
-      </div>
-      <div class="col-lg-7" data-aos="fade-left">
-        <h2>About Me</h2>
-        <p>
-          I'm Ranjith, a passionate web developer who loves building modern,
-          responsive, and interactive websites using HTML, CSS, JavaScript,
-          Bootstrap, Python, and Django.
-        </p>
-        <p>
-          My goal is to deliver clean, user-friendly designs with smooth
-          animations and professional layouts.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Skills -->
-<section id="skills">
-  <div class="container">
-    <h2 class="text-center mb-5" data-aos="fade-up">My Skills</h2>
-
-    <div class="row">
-      <div class="col-md-6 mb-4">
-        <h6>HTML</h6>
-        <div class="progress">
-          <div class="progress-bar bg-success" style="width:95%">95%</div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Ranjith</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://drive.google.com/file/d/1vclVabFofctCFqD-iOOLPejByLNMDYfU/view?usp=sharing"
+                    class="cv-btn">Download CV</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-      </div>
+    </nav>
 
-      <div class="col-md-6 mb-4">
-        <h6>CSS</h6>
-        <div class="progress">
-          <div class="progress-bar bg-info" style="width:85%">85%</div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hi, I'm Ranjith K</h1>
+            <h2>Full Stack Developer</h2>
+            <p>Passionate developer crafting elegant solutions to complex problems. Specializing in building scalable
+                web applications with modern technologies and best practices.</p>
+            <a href="#projects" class="cta-btn">View My Work</a>
         </div>
-      </div>
+    </section>
 
-      <div class="col-md-6 mb-4">
-        <h6>JavaScript</h6>
-        <div class="progress">
-          <div class="progress-bar bg-warning" style="width:50%">50%</div>
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <div class="profile-card">
+                <div class="profile-img"></div>
+                <h3>Ranjith K</h3>
+                <p class="role">Full Stack Developer</p>
+                <div class="stats">
+
+                    <div class="stat-item">
+                        <h4>3+</h4>
+                        <p>Projects Done</p>
+                    </div>
+
+                    <div class="stat-item">
+                        <h4>5+</h4>
+                        <p>Technologies</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content">
+                <h3>Professional Summary</h3>
+                <p>I'm a dedicated Full Stack Developer with a proven track record of delivering high-quality web
+                    applications. My expertise spans both frontend and backend development, with a strong focus on
+                    creating seamless user experiences.</p>
+                <p>With proficiency in modern JavaScript frameworks and a deep understanding of server-side
+                    technologies, I build scalable, maintainable applications that solve real-world problems. I'm
+                    passionate about clean code, performance optimization, and staying current with industry trends.</p>
+                <p>I thrive in collaborative environments and enjoy tackling challenging projects that push the
+                    boundaries of what's possible on the web. My goal is to continue growing as a developer while
+                    contributing to innovative projects that make a difference.</p>
+                <a href="https://drive.google.com/file/d/1vclVabFofctCFqD-iOOLPejByLNMDYfU/view?usp=sharing"
+                    class="cv-btn" style="margin-top: 1rem;">Download CV</a>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="col-md-6 mb-4">
-        <h6>Bootstrap</h6>
-        <div class="progress">
-          <div class="progress-bar bg-primary" style="width:80%">80%</div>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">HTML & CSS</span>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="85"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="80"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">React</span>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="75"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">Python</span>
+                    <span class="skill-percent">86%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="86"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">Django</span>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="80"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">PostgreSQL</span>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-width="70"></div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="col-md-6 mb-4">
-        <h6>Python</h6>
-        <div class="progress">
-          <div class="progress-bar bg-dark" style="width:60%">60%</div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img"><img src="images/libStore.png" alt=""></div>
+                <div class="project-content">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A fully responsive e-commerce solution with secure payment integration, real-time inventory
+                        management, and an intuitive admin dashboard.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">HTML & CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">Stripe</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img"><img src="images/django-pro.jpg" alt=""></div>
+                <div class="project-content">
+                    <h3>Doctor Appointment System</h3>
+                    <p>Online appointment booking system for doctors with features like appointment scheduling, patient
+                        management, and real-time notifications.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">HTML & CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img"><img src="images/agoda.png" alt=""></div>
+                <div class="project-content">
+                    <h3>Agoda Website Clone</h3>
+                    <p>Agoda website clone with features like hotel booking, real-time availability, and user reviews.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img"><img src="images/W3nav.png" alt=""></div>
+                <div class="project-content">
+                    <h3>W3 School Navigation Bar</h3>
+                    <p>W3 School Navigation Bar with features.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
-      </div>
+    </section>
 
-      <div class="col-md-6 mb-4">
-        <h6>Django</h6>
-        <div class="progress">
-          <div class="progress-bar bg-secondary" style="width:40%">40%</div>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-text">
+                        <h4>Email</h4>
+                        <p>ranjithth73@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-text">
+                        <h4>Phone</h4>
+                        <p>+91 98765 43210</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-text">
+                        <h4>Location</h4>
+                        <p>Kerala, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- Projects -->
-<section id="projects">
-  <div class="container">
-    <h2 class="text-center mb-5" data-aos="fade-up">Projects</h2>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Ranjith K. All Rights Reserved.</p>
+    </footer>
 
-    <div class="row g-4 justify-content-center">
-      <div class="col-lg-4 col-md-6">
-        <div class="card h-100 shadow">
-          <img src="W3nav.png" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5>W3 Navbar Clone</h5>
-            <p>Cloned W3Schools navbar using HTML & CSS.</p>
-          </div>
-        </div>
-      </div>
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
 
-      <div class="col-lg-4 col-md-6">
-        <div class="card h-100 shadow">
-          <img src="agoda.png" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5>Agoda Clone</h5>
-            <p>Responsive Agoda website clone.</p>
-          </div>
-        </div>
-      </div>
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
 
-      <div class="col-lg-4 col-md-6">
-        <div class="card h-100 shadow">
-          <img src="port.png" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5>Portfolio</h5>
-            <p>Personal responsive portfolio website.</p>
-          </div>
-        </div>
-      </div>
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
 
-      <div class="col-lg-4 col-md-6">
-        <div class="card h-100 shadow">
-          <img src="django-pro.png" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5>Hospital Website</h5>
-            <p>Hospital management site using Django.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        // Skills Animation on Scroll
+        const skillItems = document.querySelectorAll('.skill-item');
+        const skillsSection = document.getElementById('skills');
 
-<!-- Contact -->
-<section id="contact">
-  <div class="container text-center">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:ranjithth73@gmail.com">ranjithth73@gmail.com</a></p>
+        const animateSkills = () => {
+            const sectionTop = skillsSection.getBoundingClientRect().top;
+            const triggerPoint = window.innerHeight * 0.8;
 
-    <div class="social-links my-4">
-      <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-    </div>
-  </div>
-</section>
+            if (sectionTop < triggerPoint) {
+                skillItems.forEach((item, index) => {
+                    setTimeout(() => {
+                        item.classList.add('animate');
+                        const progress = item.querySelector('.skill-progress');
+                        const width = progress.getAttribute('data-width');
+                        progress.style.width = width + '%';
+                    }, index * 200);
+                });
+                window.removeEventListener('scroll', animateSkills);
+            }
+        };
 
-<!-- Footer -->
-<footer>
-  <p>© 2025 Ranjith. All Rights Reserved.</p>
-</footer>
+        window.addEventListener('scroll', animateSkills);
 
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({ duration: 1000, once: true });
-</script>
+        // Form Submission Handler
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            contactForm.reset();
+        });
+
+        // Smooth scroll enhancement
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
-</html>
 
+</html>
