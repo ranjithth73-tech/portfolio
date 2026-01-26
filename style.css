@@ -119,7 +119,7 @@ body {
     justify-content: center;
     position: relative;
     background: linear-gradient(rgba(14, 14, 14, 0.7), rgba(14, 14, 14, 0.8)),
-        url('images/heroImg.jpeg');
+        url('heroImg.jpeg');
     /* Replace with your image path */
     background-size: cover;
     background-position: center;
